@@ -1,0 +1,14 @@
+@import 'variables';
+ul {
+    li {
+        a[href='http://www.youtube.com'] {
+            color: $color1;
+        }
+        a[href='http://www.facebook.com'] {
+            color: $color2;
+        }
+        a[href='http://www.google.com'] {
+            color: $color3;
+        }
+    }
+}

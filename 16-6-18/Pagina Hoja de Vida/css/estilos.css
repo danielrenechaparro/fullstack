@@ -1,0 +1,61 @@
+body{
+    margin: 10%;
+    color: aliceblue !important;
+}
+h1{
+    color: aqua;
+}
+#parrafo_1{
+    color: blue;
+}
+.dark{
+    color: black;
+    background-color: blue;
+}
+/*
+Esto es un comentario
+*/
+[data-vegetable]{
+    color: brown;
+}
+[data-vegetable="potatoes"]{
+    color: navy;
+}
+[data-vegetable~="elemento2"]{
+    /*
+    Busca que los elementos que tengan ese atributo y ademas que tengan una lista como valor y que ademas el valor indicado este dentro de la lista
+    */
+    font-size:20px;
+}
+a:hover{
+    /*
+    Solo afecta las propiedades del evento hover
+    */
+    color: brown;
+    cursor: crosshair;
+}
+a{
+    /*
+    Para que afecte a todos los eventos de un elemento, se pone el cambio sobre el elemento
+    */
+    text-decoration: none;
+}
+#caja_principal{
+    background-color:yellow;
+    height: 300px;
+    width: 100%;
+    padding: 3%; /* Si se especifica un solo valor, lo toma xa los 4 lados, si se le dan 2 el primero es de arriba-abajo y el segundo izq-der*/
+}
+.dividido{
+    background-color: blue;
+    margin: 2% 2% 0% 0% ; /* Asigna los valores en el orden de las agujas del reloj. arriba, der, abajo, izq */
+    height: 50%;
+    width: 40%;
+    float: left;
+}
+#abajo{
+    background: red;
+    width: 100%;
+    height: 50%;
+    float: left;
+}

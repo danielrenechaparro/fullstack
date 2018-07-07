@@ -1,0 +1,18 @@
+// importo una libreria
+@import 'libreria';
+
+ul {
+    li{
+        a[href="http://www.youtube.com"] {
+            color: $color_1;
+        }
+
+        a[href="http://facebook.com"] {
+            color: $color_2;
+        }
+
+        a[href="http://google.com"] {
+            color: $color_3;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+body {
+  align-content: center !important;
+}
+
+#derecha {
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+
+#izquierda {
+  width: 50%;
+  height: 400px;
+  float: left;
+}

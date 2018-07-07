@@ -1,0 +1,31 @@
+// importo una libreria
+@import 'libreria';
+
+
+body{
+    /* 
+    Cuando estoy modificando algo que ya esta definido en la libreria, al compilar quedarian 2 reglas para la misma etiqueta, 
+    pero el navegador al leer el css, lee de arriba abajo, de izq a derecha, por lo cual le asigna una valor al atributo de acuerdo 
+    a la etiqueta de la libreria, pero despues lee la siguiente y le asigna el nuevo valor, por lo cual quedaria el ultimo valor, 
+    el cual esta en este archivo, no en la libreria.
+    */
+    color: beige;
+}
+h1{
+    color: $color_1;
+}
+#div_principal{
+    width: $valor/2;
+    background-color: $color_2;
+}
+ul{
+    li{
+        background-color: $color_1;
+    }
+}
+
+
+  
+.box { @include border-radius(10px); 
+color: aqua;
+}

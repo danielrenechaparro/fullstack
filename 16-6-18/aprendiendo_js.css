@@ -1,0 +1,11 @@
+.estilo_negro{
+    width: 800px;
+    height: 600px;
+    background: black;
+}
+
+.estilo_amarillo{
+    width: 700px;
+    height: 700px;
+    background: yellow;
+}

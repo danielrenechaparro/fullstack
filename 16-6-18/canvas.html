@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<canvas id="primerCanvas" width="800" height="600" style="border:2px solid #010101" > <!--> borde, 2 pixel ancho solido color<-->
+		se navegador no soporta canvas
+	</canvas>	
+	<script type="text/javascript">
+		var can = document.getElementById("primerCanvas");
+		var conCanvas = can.getContext("2d");
+		/*
+		//Hacer una figura geometrica "rectangulo" con relleno de cierto color
+		conCanvas.fillStyle="Red";
+		conCanvas.fillRect(50,10, 100, 100);
+		
+		// Dibujar lineas en cualquier posicion del canvas
+		conCanvas.moveTo(10,10); //mueve el cursor sin dibujar hasta esa coodenada
+		conCanvas.lineTo(200,300);	// dibuja desde el punto anterior, hasta este una linea. 
+		conCanvas.stroke();	// ordena pintar
+		*/
+		
+		// Hacer un graidente lineal
+		var gradiente = conCanvas.createLinearGradient(100,0,300,0); // dir vector del gradiente
+		gradiente.addColorStop(0,"White");	//porcentaje del area donde comienza, hasta el sigente stop o el fin del area de rellenado y q color.
+		gradiente.addColorStop(0.25, "Red"); 
+		
+		conCanvas.fillStyle = gradiente;	//Rellene el contexto con ese color
+		conCanvas.fillRect(0,0,400,400);		//El contexto va a ser un rectangulo.
+	</script>
+</body>
+</html>
+

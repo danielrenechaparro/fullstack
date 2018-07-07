@@ -1,0 +1,28 @@
+@import 'variables';
+
+h1 {
+    color: $primary-color
+}
+
+.E1{
+    font: 100% Helvetica, sans-serif;
+  color: $secundary-color;
+}
+
+ul{
+    li {
+        color:  $primary-color; 
+        font-size: 20px;
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+            border: $radius black solid;
+  }
+  
+  .box { @include border-radius(10px); }
+

@@ -1,0 +1,11 @@
+ul li a[href="http://www.youtube.com"] {
+  color: blue;
+}
+
+ul li a[href="http://facebook.com"] {
+  color: #ff0f;
+}
+
+ul li a[href="http://google.com"] {
+  color: red;
+}

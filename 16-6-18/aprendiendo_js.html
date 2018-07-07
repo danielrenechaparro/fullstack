@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Este es el titulo de la pagina</title>
+        <script src="aprendiendo_js.js"></script>
+        <link rel="stylesheet" href="aprendiendo_js.css">
+    </head>
+    <body>
+        <div style="background: blue"; >
+            <p>Capturar un valor de un elemento input y mostrarlo en un alert</p>
+            <input type="text" id="campo_entrada"/>
+            <button onclick="capturar_valor()">Mostrar contenido input</button>
+        </div>
+        <div>
+            <p>Ejecutar codigo js desde un href</p>
+        <a href="javascript: mostrar_mensaje('Hola papa')" >Ejecutar codigo js</a>
+        </div>
+        <div>
+            <p>Modificar los estilos de los elementos desde js</p>
+            <button onclick="cambiar_color('red');">Cambiar al color Rojo</button>
+            <section id="caja_colores" style="width: 800px; height: 600px; background: black;"></section>
+        </div>
+        <div style="background: grey;">
+            <p>Permitir o cancelar eventos</p>
+            <a href="http://www.muylinux.com" onclick="return permitir_cancelar();">Permitir o Cancelar</a>
+        </div>
+        <div>
+            <p>Cambio de clases desde js:</p>
+            <button onclick="cambiar_clase();">Cambiar la clase aplicada a la caja</button>
+            <section id="caja_estilos" class="estilo_negro"></section>
+        </div>
+    </body>
+</html>

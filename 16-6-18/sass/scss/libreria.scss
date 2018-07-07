@@ -1,0 +1,43 @@
+// Definicion de una libreria
+
+//Definicion de una variable
+$color_1:blue;
+$valor:100;
+$color_2:#ff0f;
+
+html, body, ul{
+    color: aqua;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+    border:$radius black solid;
+  }
+
+  %clase_base {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .message {
+    @extend %clase_base;
+  }
+  
+  .success {
+    @extend %clase_base;
+    border-color: green;
+  }
+  
+  .error {
+    @extend %clase_base;
+    border-color: red;
+  }
+  
+  .warning {
+    @extend %clase_base;
+    border-color: yellow;
+  }

@@ -1,0 +1,7 @@
+pluggin de sass xa compilar sass desde vsc:
+easy sass
+
+desde la terminal se le debe indicar a sass cual es el archivo de origen:archivo destino. p.e. sass --watch scss/main.scss:scss/main.css
+asumiendo que estoy sobre la carpeta que contiene a la carpeta scss, ademas asumiendo que voy a dejar el archivo css en la misma carpeta 
+en la que esta el scss.
+

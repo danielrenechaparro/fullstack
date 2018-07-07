@@ -1,0 +1,21 @@
+
+//Definicion de una variable
+$color_1:blue;
+$color_2:red;
+
+body{
+    align-content: center!important;
+}
+
+#derecha{
+    // background-color:$color_1;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+#izquierda{
+    // background-color:$color_2;
+    width: 50%;
+    height: 400px;
+    float: left;
+}

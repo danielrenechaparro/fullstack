@@ -1,0 +1,55 @@
+html, body, ul {
+  color: aqua;
+}
+
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+body {
+  /* 
+  Cuando estoy modificando algo que ya esta definido en la libreria, al compilar quedarian 2 reglas para la misma etiqueta, 
+  pero el navegador al leer el css, lee de arriba abajo, de izq a derecha, por lo cual le asigna una valor al atributo de acuerdo 
+  a la etiqueta de la libreria, pero despues lee la siguiente y le asigna el nuevo valor, por lo cual quedaria el ultimo valor, 
+  el cual esta en este archivo, no en la libreria.
+  */
+  color: beige;
+}
+
+h1 {
+  color: blue;
+}
+
+#div_principal {
+  width: 50;
+  background-color: #ff0f;
+}
+
+ul li {
+  background-color: blue;
+}
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border: 10px black solid;
+  color: aqua;
+}
+
+/*# sourceMappingURL=scss/main.css.map */

@@ -1,0 +1,23 @@
+h1 {
+  color: yellow;
+}
+
+.E1 {
+  font: 100% Helvetica, sans-serif;
+  color: blue;
+}
+
+ul li {
+  color: yellow;
+  font-size: 20px;
+}
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border: 10px black solid;
+}
+
+/*# sourceMappingURL=scss/main.css.map */
