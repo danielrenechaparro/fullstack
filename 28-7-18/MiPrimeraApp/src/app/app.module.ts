@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PrincipalPage } from '../pages/principal/principal';
+import {FormsModule} from '@angular/forms'; // Ya que lo voy a usar en todas los componentes lo importo desde aca.
 
 @NgModule({
   declarations: [ // componentes a tener disponibles
@@ -14,9 +15,10 @@ import { PrincipalPage } from '../pages/principal/principal';
     HomePage,
     PrincipalPage // tengo que indicar que lo voy a tener disponible
   ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
+  imports: [  // todo lo que importe desde aca, estara disponible para todas los componentes, pero deja mas lenta la app, por lo cual es mejor en el componente cuando el lo necesite.
+    BrowserModule, // los modulos se cargan en el orden, por lo cual los mas importantes deben ser los primeros.
+    IonicModule.forRoot(MyApp),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [ // componentes a usar
